@@ -4,13 +4,11 @@ import { redirect } from "next/navigation";
 import { NextPage } from "next";
 
 interface CallbackPageProps {
-  searchParams: {
-    request_token?: string;
-  };
+  searchParams: Promise<{ request_token?: string }>;
 }
 
 const CallbackPage: NextPage<CallbackPageProps> = async ({ searchParams }) => {
-  const requestToken = searchParams.request_token;
+  const requestToken = (await searchParams).request_token;
 
   if (!requestToken) {
     redirect("/");

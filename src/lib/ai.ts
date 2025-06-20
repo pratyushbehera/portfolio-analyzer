@@ -1,5 +1,3 @@
-import { AnalysisResponse } from "@/types";
-
 export const analyzeWithAI = async (prompt: string): Promise<string> => {
   const response = await fetch(
     "https://openrouter.ai/api/v1/chat/completions",

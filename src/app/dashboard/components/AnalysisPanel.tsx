@@ -10,7 +10,6 @@ export default function AnalysisPanel({
   stock: Stock | null;
   portfolio: Portfolio;
 }) {
-  const [question, setQuestion] = useState("");
   const [customQuestion, setCustomQuestion] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [analysis, setAnalysis] = useState("");
@@ -48,7 +47,7 @@ export default function AnalysisPanel({
     if (!stock || !customQuestion.trim()) return;
 
     setIsLoading(true);
-    setQuestion(customQuestion);
+    setCustomQuestion(customQuestion);
 
     try {
       const prompt = generatePrompt(stock, customQuestion, portfolio);

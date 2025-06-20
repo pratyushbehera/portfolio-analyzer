@@ -1,10 +1,7 @@
 import { QuestionTemplatesProps } from "@/types";
 
 // components/QuestionTemplates.js
-export default function QuestionTemplates({
-  stock,
-  portfolio,
-}: QuestionTemplatesProps) {
+export default function QuestionTemplates({ stock }: QuestionTemplatesProps) {
   const questions = [
     "Should I hold this stock given current market conditions?",
     "What's the technical outlook for this stock?",
