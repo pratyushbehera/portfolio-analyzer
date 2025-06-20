@@ -86,7 +86,7 @@ export default function LoginPage() {
         {/* Footer */}
         <div className="text-center text-white/50 text-sm">
           <p>
-            Don't have a Zerodha account?{" "}
+            Don&apos;t have a Zerodha account?{" "}
             <Link
               href="https://zerodha.com"
               className="text-blue-300 hover:underline"

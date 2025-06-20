@@ -55,7 +55,7 @@ export default function LandingPage() {
               href="/login"
               className="px-8 py-4 bg-white text-blue-900 font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              Get Started - It's Free
+              Get Started - It&apos;s Free
             </Link>
             {/* <button className="px-8 py-4 bg-transparent text-white font-semibold rounded-lg border border-white border-opacity-30 hover:bg-white hover:bg-opacity-10 transition-all duration-300">
               Watch Demo
